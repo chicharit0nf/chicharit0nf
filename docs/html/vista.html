@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vista &mdash; MiProyecto 0.0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=d45e8c67"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Modelo" href="modelo.html" />
+    <link rel="prev" title="Introduccion" href="introducci%C3%B3n.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            MiProyecto
+          </a>
+              <div class="version">
+                0.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contenido:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introducci%C3%B3n.html">Introduccion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introducci%C3%B3n.html#manual-para-el-usuario">Manual para el Usuario</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Vista</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#modulos-importados">Modulos Importados</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clases">Clases</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vista.VistaPrincipal"><code class="docutils literal notranslate"><span class="pre">VistaPrincipal</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#vista.VistaPrincipal.crear_fila_entrada"><code class="docutils literal notranslate"><span class="pre">VistaPrincipal.crear_fila_entrada()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vista.VistaPrincipal.crear_fila_entrada_contrasena"><code class="docutils literal notranslate"><span class="pre">VistaPrincipal.crear_fila_entrada_contrasena()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vista.VistaPrincipal.crear_interfaz"><code class="docutils literal notranslate"><span class="pre">VistaPrincipal.crear_interfaz()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vista.VistaPrincipal.crear_treeview"><code class="docutils literal notranslate"><span class="pre">VistaPrincipal.crear_treeview()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#vista.Botones"><code class="docutils literal notranslate"><span class="pre">Botones</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#vista.Botones.crear_boton"><code class="docutils literal notranslate"><span class="pre">Botones.crear_boton()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vista.Botones.crear_botones"><code class="docutils literal notranslate"><span class="pre">Botones.crear_botones()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#vista.Clock"><code class="docutils literal notranslate"><span class="pre">Clock</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#vista.Clock.get_current_time"><code class="docutils literal notranslate"><span class="pre">Clock.get_current_time()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vista.Clock.update_clock"><code class="docutils literal notranslate"><span class="pre">Clock.update_clock()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modelo.html">Modelo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="controlador.html">Controlador</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resolucion.html">Conclusiones</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MiProyecto</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Vista</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/vista.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="vista">
+<h1>Vista<a class="headerlink" href="#vista" title="Link to this heading"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Contiene la interfaz gráfica de la aplicación, definida utilizando la biblioteca Tkinter de Python. Esta interfaz proporciona una forma visual para que los usuarios interactúen con el sistema, mostrando datos y permitiendo realizar acciones mediante botones y otros elementos interactivos.</p>
+</div>
+<section id="modulos-importados">
+<h2>Modulos Importados<a class="headerlink" href="#modulos-importados" title="Link to this heading"></a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="sd">&quot;&quot;&quot;- Importamos todo el módulo tkinter.&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">ttk</span>
+<span class="sd">&quot;&quot;&quot;- Importamos todo el módulo tkinter.&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">tkinter</span> <span class="k">as</span> <span class="nn">tk</span>
+<span class="sd">&quot;&quot;&quot;- Importamos el módulo tkinter y lo renombramos como tk.&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="sd">&quot;&quot;&quot;- Importamos el módulo time, para funcion de nuestro fecha y hora.&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">tkinter.messagebox</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="sd">&quot;&quot;&quot;- Interfaz estándar de Python para el kit de herramientas Tk GUI. Proporciona clases y funciones para crear interfaces gráficas de usuario.&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">modelo</span> <span class="kn">import</span> <span class="n">FuncionesBotonera</span>
+<span class="sd">&quot;&quot;&quot;- Importamos la clase FuncionesBotonera del módulo modelo.&quot;&quot;&quot;</span><span class="s2">&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="clases">
+<h2>Clases<a class="headerlink" href="#clases" title="Link to this heading"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Contiene clases que definen la interfaz gráfica de la aplicación. Estas clases se encargan de mostrar información al usuario y de permitirle interactuar con el sistema a través de elementos como botones, campos de texto y otros widgets. Cada clase representa una parte específica de la interfaz y se utiliza para organizar y gestionar los componentes visuales de manera estructurada.</p>
+</div>
+<p class="rubric" id="module-vista">:: VistaPrincipal</p>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Define la ventana principal de la aplicación, mostrando una interfaz con botones para acceder a diferentes funciones y una tabla para visualizar y gestionar los clientes.</p></li>
+</ul>
+<dl class="py class">
+<dt class="sig sig-object py" id="vista.VistaPrincipal">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vista.</span></span><span class="sig-name descname"><span class="pre">VistaPrincipal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">window</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vista.html#VistaPrincipal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vista.VistaPrincipal" title="Link to this definition"></a></dt>
+<dd><ul class="simple">
+<li><p>Clase VistaPrincipal: que representa la interfaz principal de la aplicación.</p></li>
+</ul>
+<dl class="py method">
+<dt class="sig sig-object py" id="vista.VistaPrincipal.crear_fila_entrada">
+<span class="sig-name descname"><span class="pre">crear_fila_entrada</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nombre</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">textvariable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vista.html#VistaPrincipal.crear_fila_entrada"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vista.VistaPrincipal.crear_fila_entrada" title="Link to this definition"></a></dt>
+<dd><ul class="simple">
+<li><p>Funcion para edicion de la entrada de datos: Crea una fila de entrada de texto.</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nombre</strong> – El nombre del campo.</p></li>
+<li><p><strong>textvariable</strong> – La variable de control asociada al campo.</p></li>
+<li><p><strong>width</strong> – El ancho del campo en caracteres.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vista.VistaPrincipal.crear_fila_entrada_contrasena">
+<span class="sig-name descname"><span class="pre">crear_fila_entrada_contrasena</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nombre</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">textvariable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_char</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'*'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vista.html#VistaPrincipal.crear_fila_entrada_contrasena"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vista.VistaPrincipal.crear_fila_entrada_contrasena" title="Link to this definition"></a></dt>
+<dd><ul class="simple">
+<li><p>Funcion para edicion de la entrada de contraseña: Crea una fila de entrada de texto con opción para contraseña.</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nombre</strong> – El nombre del campo.</p></li>
+<li><p><strong>textvariable</strong> – La variable de control asociada al campo.</p></li>
+<li><p><strong>width</strong> – El ancho del campo en caracteres.</p></li>
+<li><p><strong>show_char</strong> – El carácter a mostrar en lugar del texto.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vista.VistaPrincipal.crear_interfaz">
+<span class="sig-name descname"><span class="pre">crear_interfaz</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/vista.html#VistaPrincipal.crear_interfaz"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vista.VistaPrincipal.crear_interfaz" title="Link to this definition"></a></dt>
+<dd><ul class="simple">
+<li><p>Funcion para mi interfaz: Crea la interfaz gráfica de la ventana principal.</p></li>
+<li><p>Crea un título con el texto “Plantilla de clientes - Ingrese sus datos” y lo coloca en la parte superior de la ventana.</p></li>
+<li><p>Define cinco variables de control (<cite>StringVar</cite>) para los campos de entrada de texto.</p></li>
+<li><p>Crea cinco campos de entrada de texto para que el usuario ingrese datos:
+- Nombre
+- Apellido
+- Rubro/Oficio
+- CUIT/CUIL
+- Clave Fiscal</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vista.VistaPrincipal.crear_treeview">
+<span class="sig-name descname"><span class="pre">crear_treeview</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/vista.html#VistaPrincipal.crear_treeview"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vista.VistaPrincipal.crear_treeview" title="Link to this definition"></a></dt>
+<dd><ul class="simple">
+<li><p>Funcion TREVIEW: Crea y configura un widget Treeview.</p></li>
+</ul>
+</dd></dl>
+
+</dd></dl>
+
+<img alt="i1.png" src="i1.png" />
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">VistaPrincipal</span><span class="p">(</span><span class="n">Frame</span><span class="p">):</span>
+<span class="w"> </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd"> - Clase VistaPrincipal: que representa la interfaz principal de la aplicación.&quot;&quot;&quot;</span>
+
+ <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">window</span><span class="p">):</span>
+<span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">     - Inicializa la ventana principal.</span>
+<span class="sd">     &quot;&quot;&quot;</span>
+     <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">window</span><span class="p">)</span>  <span class="c1">#llama al método __init__ de la clase base (Frame en este caso) para inicializar la ventana principal de la aplicación.</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">root</span> <span class="o">=</span> <span class="n">window</span> <span class="c1">#window: guarda una referencia a la ventana principal en el atributo root de la instancia de la clase.</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Registro De Clientes - Estudio Contable 🏛️ &quot;</span><span class="p">)</span> <span class="c1">#Establece el título de la ventana principal</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="n">bg</span><span class="o">=</span><span class="s2">&quot;#3157FF&quot;</span><span class="p">)</span> <span class="c1">#color de fondo de la ventana principal</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">objeto_botones</span> <span class="o">=</span> <span class="n">FuncionesBotonera</span><span class="p">()</span>        <span class="c1">#crea una instancia de la clase FuncionesBotonera y la asigna al atributo objeto_botones de la instancia de la clase. Esta instancia se utilizará para llamar a los métodos de esa clase.</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">crear_interfaz</span><span class="p">()</span> <span class="c1">#lama al método crear_interfaz() para crear la interfaz gráfica de la ventana principal.</span>
+
+     <span class="n">style</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">Style</span><span class="p">()</span> <span class="c1">#estilo para TK</span>
+     <span class="n">style</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s1">&#39;Treeview&#39;</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="s1">&#39;#D6ECFA&#39;</span><span class="p">,</span> <span class="n">foreground</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;bold&#39;</span><span class="p">))</span>
+
+     <span class="c1"># Agregar reloj en la parte inferior con grid</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">clock</span> <span class="o">=</span> <span class="n">Clock</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">clock</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">columnspan</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">sticky</span><span class="o">=</span><span class="s2">&quot;we&quot;</span><span class="p">)</span>
+
+ <span class="k">def</span> <span class="nf">crear_interfaz</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">     - Funcion para mi interfaz: Crea la interfaz gráfica de la ventana principal.</span>
+
+<span class="sd">     - Crea un título con el texto &quot;Plantilla de clientes - Ingrese sus datos&quot; y lo coloca en la parte superior de la ventana.</span>
+<span class="sd">     - Define cinco variables de control (`StringVar`) para los campos de entrada de texto.</span>
+<span class="sd">     - Crea cinco campos de entrada de texto para que el usuario ingrese datos:</span>
+<span class="sd">       - Nombre</span>
+<span class="sd">       - Apellido</span>
+<span class="sd">       - Rubro/Oficio</span>
+<span class="sd">       - CUIT/CUIL</span>
+<span class="sd">       - Clave Fiscal</span>
+<span class="sd">     &quot;&quot;&quot;</span>
+     <span class="n">row_offset</span> <span class="o">=</span> <span class="mi">1</span>
+
+      <span class="c1">#titulo de la aplicacion</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">titulo</span> <span class="o">=</span> <span class="n">Label</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Plantilla de clientes - Ingrese sus datos&quot;</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Arial&quot;</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="s2">&quot;bold&quot;</span><span class="p">),</span> <span class="n">fg</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">titulo</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">columnspan</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">sticky</span><span class="o">=</span><span class="s2">&quot;we&quot;</span><span class="p">)</span>
+
+     <span class="c1"># Variables de control</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">a_val</span> <span class="o">=</span> <span class="n">StringVar</span><span class="p">()</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">b_val</span> <span class="o">=</span> <span class="n">StringVar</span><span class="p">()</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">c_val</span> <span class="o">=</span> <span class="n">StringVar</span><span class="p">()</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">d_val</span> <span class="o">=</span> <span class="n">StringVar</span><span class="p">()</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">e_val</span> <span class="o">=</span> <span class="n">StringVar</span><span class="p">()</span>
+   <span class="c1"># crear un nuevo campo de entrada de texto con un nombre específico y una variable de control asociada, que se utilizará para almacenar el valor ingresado por el usuario en ese campo</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">entrada1</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">crear_fila_entrada</span><span class="p">(</span><span class="s2">&quot;Nombre&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">a_val</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">entrada2</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">crear_fila_entrada</span><span class="p">(</span><span class="s2">&quot;Apellido&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">b_val</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">entrada3</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">crear_fila_entrada</span><span class="p">(</span><span class="s2">&quot;Rubro/Oficio&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">c_val</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">entrada4</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">crear_fila_entrada</span><span class="p">(</span><span class="s2">&quot;CUIT/CUIL&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">d_val</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">entrada5</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">crear_fila_entrada_contrasena</span><span class="p">(</span><span class="s2">&quot;Clave Fiscal&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">e_val</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+
+     <span class="c1"># Agregar reloj en la parte inferior con grid</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">clock</span> <span class="o">=</span> <span class="n">Clock</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">clock</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">columnspan</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">sticky</span><span class="o">=</span><span class="s2">&quot;we&quot;</span><span class="p">)</span>
+
+ <span class="k">def</span> <span class="nf">crear_fila_entrada</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">textvariable</span><span class="p">,</span> <span class="n">width</span><span class="p">):</span>
+<span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">     - Funcion para edicion de la entrada de datos: Crea una fila de entrada de texto.</span>
+<span class="sd">     &quot;&quot;&quot;</span>
+     <span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
+     <span class="n">frame</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+     <span class="n">label</span> <span class="o">=</span> <span class="n">Label</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">nombre</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+     <span class="n">label</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">sticky</span><span class="o">=</span><span class="n">W</span><span class="p">)</span>
+     <span class="n">entry</span> <span class="o">=</span> <span class="n">Entry</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="n">textvariable</span><span class="o">=</span><span class="n">textvariable</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="n">width</span><span class="p">)</span>
+     <span class="n">entry</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">sticky</span><span class="o">=</span><span class="n">W</span><span class="p">)</span>
+     <span class="k">return</span> <span class="n">frame</span>
+
+ <span class="k">def</span> <span class="nf">crear_fila_entrada_contrasena</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">textvariable</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">show_char</span><span class="o">=</span><span class="s1">&#39;*&#39;</span><span class="p">):</span>
+<span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">     - Funcion para edicion de la entrada de contraseña: Crea una fila de entrada de texto con opción para contraseña.</span>
+
+<span class="sd">     &quot;&quot;&quot;</span>
+     <span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
+     <span class="n">frame</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+     <span class="n">label</span> <span class="o">=</span> <span class="n">Label</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">nombre</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+     <span class="n">label</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">sticky</span><span class="o">=</span><span class="n">W</span><span class="p">)</span>
+     <span class="n">entry</span> <span class="o">=</span> <span class="n">Entry</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="n">textvariable</span><span class="o">=</span><span class="n">textvariable</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="n">width</span><span class="p">,</span> <span class="n">show</span><span class="o">=</span><span class="n">show_char</span><span class="p">)</span>
+     <span class="n">entry</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">sticky</span><span class="o">=</span><span class="n">W</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+
+     <span class="c1"># Opcion de veo o no ver la clave fiscal</span>
+     <span class="n">show_password_var</span> <span class="o">=</span> <span class="n">BooleanVar</span><span class="p">()</span>
+     <span class="n">show_password_checkbox</span> <span class="o">=</span> <span class="n">Checkbutton</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s2">&quot;Mostrar contraseña&quot;</span><span class="p">,</span> <span class="n">variable</span><span class="o">=</span><span class="n">show_password_var</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="k">lambda</span><span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">objeto_botones</span><span class="o">.</span><span class="n">toggle_password</span><span class="p">(</span><span class="n">show_password_var</span><span class="p">,</span> <span class="n">entry</span><span class="p">,</span> <span class="n">show_char</span><span class="p">))</span>
+     <span class="n">show_password_checkbox</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">sticky</span><span class="o">=</span><span class="n">W</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+
+ <span class="c1">#TREEVIEWS</span>
+ <span class="k">def</span> <span class="nf">crear_treeview</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">     - Funcion TREVIEW: Crea y configura un widget Treeview.&quot;&quot;&quot;</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">tree</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">Treeview</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">tree</span><span class="p">[</span><span class="s2">&quot;columns&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;col1&quot;</span><span class="p">,</span> <span class="s2">&quot;col2&quot;</span><span class="p">,</span> <span class="s2">&quot;col3&quot;</span><span class="p">,</span> <span class="s2">&quot;col4&quot;</span><span class="p">,</span> <span class="s2">&quot;col5&quot;</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">tree</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="s2">&quot;#0&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">minwidth</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="n">W</span><span class="p">)</span>
+
+     <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">&quot;col1&quot;</span><span class="p">,</span> <span class="s2">&quot;col2&quot;</span><span class="p">,</span> <span class="s2">&quot;col3&quot;</span><span class="p">,</span> <span class="s2">&quot;col4&quot;</span><span class="p">,</span> <span class="s2">&quot;col5&quot;</span><span class="p">):</span>
+         <span class="bp">self</span><span class="o">.</span><span class="n">tree</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">minwidth</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="n">W</span><span class="p">)</span>
+
+     <span class="c1">#Dimensiones y caracteristicas de mi treeview</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">tree</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="s2">&quot;col1&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">minwidth</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="n">W</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">tree</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="s2">&quot;col2&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">minwidth</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="n">W</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">tree</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="s2">&quot;col3&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">minwidth</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="n">W</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">tree</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="s2">&quot;col4&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">minwidth</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="n">W</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">tree</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="s2">&quot;col5&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">minwidth</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="n">W</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">tree</span><span class="o">.</span><span class="n">heading</span><span class="p">(</span><span class="s2">&quot;#0&quot;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;ID&quot;</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">tree</span><span class="o">.</span><span class="n">heading</span><span class="p">(</span><span class="s2">&quot;col1&quot;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Nombre&quot;</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">tree</span><span class="o">.</span><span class="n">heading</span><span class="p">(</span><span class="s2">&quot;col2&quot;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Apellido&quot;</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">tree</span><span class="o">.</span><span class="n">heading</span><span class="p">(</span><span class="s2">&quot;col3&quot;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Rubro / Oficio&quot;</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">tree</span><span class="o">.</span><span class="n">heading</span><span class="p">(</span><span class="s2">&quot;col4&quot;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;CUIT / CUIL&quot;</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">tree</span><span class="o">.</span><span class="n">heading</span><span class="p">(</span><span class="s2">&quot;col5&quot;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Clave Fiscal&quot;</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">tree</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="n">row_offset</span> <span class="o">+</span> <span class="mi">5</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">columnspan</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+<p class="rubric">:: Botones</p>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Contiene métodos para manejar los eventos de los botones en la interfaz, como agregar clientes, eliminar clientes y modificar datos de clientes en la base de datos.</p></li>
+</ul>
+<dl class="py class">
+<dt class="sig sig-object py" id="vista.Botones">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vista.</span></span><span class="sig-name descname"><span class="pre">Botones</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">root</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">objeto_botones</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a_val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d_val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e_val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tree</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vista.html#Botones"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vista.Botones" title="Link to this definition"></a></dt>
+<dd><ul class="simple">
+<li><p>Clase que gestiona los botones de la interfaz.</p></li>
+</ul>
+<dl class="py method">
+<dt class="sig sig-object py" id="vista.Botones.crear_boton">
+<span class="sig-name descname"><span class="pre">crear_boton</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">command</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vista.html#Botones.crear_boton"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vista.Botones.crear_boton" title="Link to this definition"></a></dt>
+<dd><ul class="simple">
+<li><p>Funcion para definir botones: Crea un botón con el texto especificado y la función de comando indicada.</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> – El texto del botón.</p></li>
+<li><p><strong>command</strong> – La función de comando que se ejecuta al hacer clic en el botón.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vista.Botones.crear_botones">
+<span class="sig-name descname"><span class="pre">crear_botones</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/vista.html#Botones.crear_botones"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vista.Botones.crear_botones" title="Link to this definition"></a></dt>
+<dd><ul class="simple">
+<li><p>Funcion para crear botones: Crea los botones de la interfaz y los configura con las funciones correspondientes.</p></li>
+</ul>
+</dd></dl>
+
+</dd></dl>
+
+<img alt="i1.png" src="i1.png" />
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Botones</span><span class="p">():</span>
+<span class="w">   </span><span class="sd">&quot;&quot;&quot;- Clase que gestiona los botones de la interfaz.&quot;&quot;&quot;</span>
+
+   <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root</span><span class="p">,</span> <span class="n">objeto_botones</span><span class="p">,</span> <span class="n">a_val</span><span class="p">,</span> <span class="n">b_val</span><span class="p">,</span> <span class="n">c_val</span><span class="p">,</span> <span class="n">d_val</span><span class="p">,</span> <span class="n">e_val</span><span class="p">,</span> <span class="n">tree</span><span class="p">):</span>
+<span class="w">      </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">      - Inicializa la botonera.</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">root</span> <span class="o">=</span> <span class="n">root</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">objeto_botones</span> <span class="o">=</span> <span class="n">objeto_botones</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">a_val</span> <span class="o">=</span> <span class="n">a_val</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">b_val</span> <span class="o">=</span> <span class="n">b_val</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">c_val</span> <span class="o">=</span> <span class="n">c_val</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">d_val</span> <span class="o">=</span> <span class="n">d_val</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">e_val</span> <span class="o">=</span> <span class="n">e_val</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">tree</span> <span class="o">=</span> <span class="n">tree</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">crear_botones</span><span class="p">()</span>
+
+   <span class="k">def</span> <span class="nf">crear_botones</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">      </span><span class="sd">&quot;&quot;&quot;- Funcion para crear botones: Crea los botones de la interfaz y los configura con las funciones correspondientes.&quot;&quot;&quot;</span>
+      <span class="n">row_offset</span> <span class="o">=</span> <span class="mi">1</span>
+
+      <span class="c1"># Botón para agregar cliente</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">boton_alta</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">crear_boton</span><span class="p">(</span><span class="s2">&quot;Agregar Cliente&quot;</span><span class="p">,</span> <span class="k">lambda</span><span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">objeto_botones</span><span class="o">.</span><span class="n">alta</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a_val</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">b_val</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">c_val</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">d_val</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">e_val</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tree</span><span class="p">))</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">boton_alta</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="n">row_offset</span> <span class="o">+</span> <span class="mi">6</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+      <span class="c1"># Botón para modificar cliente</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">boton_modificar</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">crear_boton</span><span class="p">(</span><span class="s2">&quot;Modificar Cliente&quot;</span><span class="p">,</span> <span class="k">lambda</span><span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">objeto_botones</span><span class="o">.</span><span class="n">modificar</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tree</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">a_val</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">b_val</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">c_val</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">d_val</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">e_val</span><span class="p">))</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">boton_modificar</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="n">row_offset</span> <span class="o">+</span> <span class="mi">6</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+      <span class="c1"># Botón para eliminar cliente</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">boton_borrar</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">crear_boton</span><span class="p">(</span><span class="s2">&quot;Eliminar Cliente&quot;</span><span class="p">,</span> <span class="k">lambda</span><span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">objeto_botones</span><span class="o">.</span><span class="n">borrar</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tree</span><span class="p">))</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">boton_borrar</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="n">row_offset</span> <span class="o">+</span> <span class="mi">6</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+      <span class="c1"># Botón para consultar cliente</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">boton_consulta</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">crear_boton</span><span class="p">(</span><span class="s2">&quot;Consultar Cliente&quot;</span><span class="p">,</span> <span class="k">lambda</span><span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">objeto_botones</span><span class="o">.</span><span class="n">consultar</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tree</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">a_val</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">b_val</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">c_val</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">d_val</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">e_val</span><span class="p">))</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">boton_consulta</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="n">row_offset</span> <span class="o">+</span> <span class="mi">6</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">pady</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+   <span class="k">def</span> <span class="nf">crear_boton</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">      </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">      - Funcion para definir botones: Crea un botón con el texto especificado y la función de comando indicada.</span>
+
+<span class="sd">      &quot;&quot;&quot;</span>
+      <span class="n">default_kwargs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">bg</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;bold&#39;</span><span class="p">))</span>
+      <span class="n">default_kwargs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">Button</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">text</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">command</span><span class="p">,</span> <span class="o">**</span><span class="n">default_kwargs</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="rubric">:: Clock</p>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Proporciona un reloj en tiempo real en la interfaz, mostrando la hora actualizada constantemente para brindar información al usuario.</p></li>
+</ul>
+<dl class="py class">
+<dt class="sig sig-object py" id="vista.Clock">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vista.</span></span><span class="sig-name descname"><span class="pre">Clock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vista.html#Clock"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vista.Clock" title="Link to this definition"></a></dt>
+<dd><ul class="simple">
+<li><p>Funcion para reloj y fecha: Clase que muestra un reloj con la fecha actual.</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Show-inheritance<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="vista.Clock.get_current_time">
+<span class="sig-name descname"><span class="pre">get_current_time</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/vista.html#Clock.get_current_time"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vista.Clock.get_current_time" title="Link to this definition"></a></dt>
+<dd><ul class="simple">
+<li><p>Funcion formato: Obtiene la fecha y hora actual en formato ‘dd/mm/yyyy - hh:mm:ss’.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vista.Clock.update_clock">
+<span class="sig-name descname"><span class="pre">update_clock</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/vista.html#Clock.update_clock"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#vista.Clock.update_clock" title="Link to this definition"></a></dt>
+<dd><ul class="simple">
+<li><p>Funcion de actulizacion: Actualiza el reloj con la fecha y hora actuales.</p></li>
+</ul>
+</dd></dl>
+
+</dd></dl>
+
+<img alt="i1.png" src="i1.png" />
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span> <span class="c1"># Reloj inferior con fecha</span>
+<span class="k">class</span> <span class="nc">Clock</span><span class="p">(</span><span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">):</span>
+<span class="w">   </span><span class="sd">&quot;&quot;&quot;- Funcion para reloj y fecha: Clase que muestra un reloj con la fecha actual.&quot;&quot;&quot;</span>
+
+   <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+<span class="w">      </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">      Inicializa el reloj.</span>
+
+<span class="sd">      :param parent: El widget padre del reloj.</span>
+<span class="sd">      &quot;&quot;&quot;</span>
+      <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="s1">&#39;bold&#39;</span><span class="p">))</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">parent</span> <span class="o">=</span> <span class="n">parent</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">time_string</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">StringVar</span><span class="p">()</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">time_string</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_current_time</span><span class="p">())</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="n">textvariable</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">time_string</span><span class="p">)</span>
+
+      <span class="bp">self</span><span class="o">.</span><span class="n">update_clock</span><span class="p">()</span>
+
+   <span class="k">def</span> <span class="nf">get_current_time</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">      </span><span class="sd">&quot;&quot;&quot;- Funcion formato: Obtiene la fecha y hora actual en formato &#39;dd/mm/yyyy - hh:mm:ss&#39;.&quot;&quot;&quot;</span>
+      <span class="k">return</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">/%m/%Y  -  %H:%M:%S&#39;</span><span class="p">)</span>
+
+   <span class="k">def</span> <span class="nf">update_clock</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">      </span><span class="sd">&quot;&quot;&quot;- Funcion de actulizacion: Actualiza el reloj con la fecha y hora actuales.&quot;&quot;&quot;</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">time_string</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_current_time</span><span class="p">())</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">after</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">update_clock</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="introducci%C3%B3n.html" class="btn btn-neutral float-left" title="Introduccion" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="modelo.html" class="btn btn-neutral float-right" title="Modelo" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Nahuel Matias Fortuna.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
